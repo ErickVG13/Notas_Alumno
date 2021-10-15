@@ -16,31 +16,33 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.098" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="44dp"
         android:text="Nombre del estudiante :"
         android:textColor="#FF0000"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/TPName"
         android:layout_width="339dp"
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
+        android:backgroundTint="#E91E63"
+        android:backgroundTintMode="screen"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,14 +64,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/TPName"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/TPCarrera"
         android:layout_width="334dp"
         android:layout_height="51dp"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#E91E63"
+        android:backgroundTintMode="screen"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -93,25 +97,31 @@
         android:typeface="monospace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/TPCarrera" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/TNota1"
         android:layout_width="85dp"
         android:layout_height="52dp"
         android:layout_marginTop="28dp"
+        android:backgroundTint="#E91E63"
+        android:backgroundTintMode="screen"
         android:ems="10"
         android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.165"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.01" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal3"
+        android:id="@+id/TNota3"
         android:layout_width="73dp"
         android:layout_height="51dp"
         android:layout_marginTop="28dp"
+        android:backgroundTint="#E91E63"
+        android:backgroundTintMode="screen"
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -122,26 +132,41 @@
         app:layout_constraintVertical_bias="0.008" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal2"
+        android:id="@+id/TNota2"
         android:layout_width="75dp"
         android:layout_height="51dp"
         android:layout_marginTop="28dp"
+        android:backgroundTint="#E91E63"
+        android:backgroundTintMode="screen"
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.004" />
+        app:layout_constraintVertical_bias="0.01" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:text="Calcular"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="569dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TNota2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="65dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="33dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
