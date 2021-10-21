@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         btCalcular=(Button)  findViewById(R.id.btCalcular);
 
         Context contect=getApplicationContext();
+
 
         Intent intentuno =new Intent(this, MainActivityN2.class);
 
