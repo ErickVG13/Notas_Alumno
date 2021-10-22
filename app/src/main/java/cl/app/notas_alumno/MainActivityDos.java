@@ -45,6 +45,7 @@ public class MainActivityDos extends AppCompatActivity  {
                 String mensaje = "" + PromedioTotal;
 
                 TxNotaF.setText (mensaje);
+                Toast.makeText(context, ""+TxNotaF, Toast.LENGTH_SHORT).show();
 
                 btVolver.setOnClickListener(new View.OnClickListener() {
                         @Override
