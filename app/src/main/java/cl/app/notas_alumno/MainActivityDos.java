@@ -27,7 +27,7 @@ public class MainActivityDos extends AppCompatActivity  {
                 TxName=(TextView)  findViewById(R.id.TxName);
                 Intent intent =new Intent(this, MainActivity.class);
 
-                Context context=getApplicationContext()
+                Context context=getApplicationContext();
                 Bundle intentE= this.getIntent().getExtras();
                 if (intentE!=null){
 
