@@ -16,6 +16,7 @@ public class MainActivityDos extends AppCompatActivity  {
         private Button btVolver;
         private String TPName="";
         private TextView TxName;
+        private TextView TxNotaF;
 
 
 
@@ -27,6 +28,7 @@ public class MainActivityDos extends AppCompatActivity  {
                 TxName=(TextView)  findViewById(R.id.TxName);
                 Intent intent =new Intent(this, MainActivity.class);
 
+
                 Context context=getApplicationContext();
                 Bundle intentE= this.getIntent().getExtras();
                 if (intentE!=null){
@@ -36,7 +38,13 @@ public class MainActivityDos extends AppCompatActivity  {
 
                 }
 
-                TxName.setText("" +TxName);
+;                TxName.setText("" +TPName);
+                int PromedioTotal = intent.getIntExtra("promedio", 0);
+                TxNotaF = (TextView) findViewById(R.id.TxNotaF);
+
+                String mensaje = "" + PromedioTotal;
+
+                TxNotaF.setText (mensaje);
 
                 btVolver.setOnClickListener(new View.OnClickListener() {
                         @Override
